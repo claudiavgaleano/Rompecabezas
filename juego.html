@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Kitty Arcade</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <script src="https://use.fontawesome.com/fbd8b9e134.js"></script>
+  </head>
+  <body>
+
+  	<div id="minWidth">	
+  		<img src="./images/cryKitty.gif" alt="">
+  		<h2>¡No sos vos, soy yo!</h2>
+		<p>Este juego no está desarrollado para dispositivos móviles</p>
+  	</div>
+
+  	<div id="cartelGanador" class="cartel">
+  		<div>
+  			<button onclick="cerrarCartelGanador()">x</button>
+	  		<!--<img src="http://coparmexjal.org.mx/innovacion/wp-content/uploads/2018/07/trofeo.gif" alt="" class="trofeo">-->
+	  		<h2>¡GANASTE!</h2>
+	  		<img src="./images/happykitty.png" class="bmo" alt="">  		
+	  		<p>¡Kitty está contenta!</p>    			
+  		</div>
+	  </div>
+	  <div id="cartelPerdedor" class="cartel">
+			<div>
+				<button onclick="cerrarCartelGanador()">x</button>
+				<!--<img src="https://tchol.org/images/broken-heart-emoji-transparent-9.png" alt="" class="trofeo">-->
+				<h2>¡PERDISTE!</h2>
+				<img src="./images/sadKitty.gif" class="bmo" alt="">  		
+				<p>¡Mejor suerte la próxima vez!</p>    			
+			</div>
+		</div>
+
+	  <div id="sombra"></div>
+	 
+	
+	    <div id="restantes">
+	    	<img src="images/faq_kitty.png">
+	    	<span class="ribon">Movimientos restantes:<input type="text" id="movimientosRestantes" size="1" disabled value=""></span> 
+	    	<div class="triangle"></div> 
+	    </div> 	    	
+	<main>
+		
+	    <div class="col-40">    
+	      <div id="titulo">
+	      	<img src="images/logo.png" alt="" id="logo">
+	      	
+	      </div>
+	      <div id="instrucciones">
+	      	<h2>Instrucciones</h2>
+	        <ul id="lista-instrucciones">
+	        </ul>
+	      </div>
+	      <div id="objetivo" class="texto-centrado">
+	      	<h3>Objetivo del juego</h3>	        	        	
+	        	<img src="images/final.jpg" class="bmo" alt="">   	        	 
+	      </div>
+	      <div id="ultimo-mov">	      	
+	      	<h3 id="ultimo-movimiento">Último Movimiento</h3>
+	        <div id="flecha" class="texto-centrado">	          
+	        </div>
+	      </div>
+	      <div id="restart">
+	      	<input type="button" id="botonReiniciar" value="Reiniciar" onclick="reIniciar()">
+	      </div>	      
+	    </div>
+	    <div class="col-60">
+	      <div id="juego">
+	      	<div class="piezas" id="pieza1">
+	      		<img src="images/10.jpg" alt="">
+	      	</div>
+	      	<div class="piezas" id="pieza2">
+	      		<img src="images/20.jpg" alt="">
+	      	</div>
+	      	<div class="piezas" id="pieza3">
+	      		<img src="images/30.jpg" alt="">
+	      	</div>
+	      	<div class="piezas" id="pieza4">
+	      		<img src="images/40.jpg" alt="">
+	      	</div>
+	      	<div class="piezas" id="pieza5">
+	      		<img src="images/50.jpg" alt="">
+	      	</div>
+	      	<div class="piezas" id="pieza6">
+	      		<img src="images/60.jpg" alt="">
+	      	</div>
+	      	<div class="piezas" id="pieza7">
+	      		<img src="images/70.jpg" alt="">
+	      	</div>
+	      	<div class="piezas" id="pieza8">
+	      		<img src="images/80.jpg" alt="">
+	      	</div>
+	      	<div class="piezas" id="pieza9">
+	      		
+	      	</div>
+	      </div>	      	
+	    </div>
+    </main>
+    <div id="footer">
+       <p class="texto-centrado">ROMPECABEZAS HELLO KITTY | Realizado por Claudia Galeano en ACAMICA | Julio 2019</p>
+    </div>
+    <script src="js/juego.js"></script>
+  </body>
+</html>
